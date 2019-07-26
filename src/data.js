@@ -89,7 +89,7 @@ const content = {
         "Improved legacy software to extend product lifetime, providing the organization the opportunity to develop next-gen software",
       ],
     },
-    { start: "August 2016",
+    { start: "August 2006",
       end: "December 2010",
       org: "Intrameta Corporation",
       title: "Software Engineer",
