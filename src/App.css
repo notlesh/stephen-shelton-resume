@@ -110,6 +110,10 @@
   font-size: 1.1rem;
 }
 
+.extraEndContainer {
+  margin: 2px 8px 12px 26px;
+}
+
 .leftInfoBox {
   margin: 8px 4px 18px 10px;
 }

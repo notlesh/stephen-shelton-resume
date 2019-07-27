@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import RoleContainer from './RoleContainer';
 import EducationContainer from './EducationContainer';
+import ExtraEndContainer from './ExtraEndContainer';
 
 function MainContent(props) {
   return (
@@ -24,6 +25,10 @@ function MainContent(props) {
           <EducationContainer key={education.text} education={education} />
         )}
       </div>
+
+      { props.data.extraEnd.map(extra =>
+        <ExtraEndContainer key={extra.headline} extra={extra} />
+      )}
     </div>
   );
 }

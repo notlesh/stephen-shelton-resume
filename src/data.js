@@ -114,6 +114,12 @@ const content = {
       text: "Studied Computer Science (University of North Texas)",
     },
   ],
+  extraEnd: [
+    { headline: "Note about this resume",
+      /* note that this is passed through html-react-parser, and is susceptible to injection attacks */
+      body: "This resume was created with ReactJS (Javascript/HTML/CSS). See the related github repo at <a href='https://github.com/notlesh/stephen-shelton-resume'>https://github.com/notlesh/stephen-shelton-resume</a> for more info.",
+    },
+  ],
 };
 
 export default content;
