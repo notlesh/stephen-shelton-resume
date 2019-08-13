@@ -60,23 +60,6 @@
     width: 0px;
     height: 0px;
 }
-/* when printing, add a spacer div to enforce margin after page breaks */
-@media print {
-  .roleContainer {
-    margin: 0px 8px 2px 12px;
-    break-inside: avoid-page;
-  }
-  .printSpacer {
-    display: block;
-    width: 0px;
-    height: 10px;
-  }
-  .roleContainer:first-of-type .printSpacer {
-    display: block;
-    width: 0px;
-    height: 0px;
-  }
-}
 .roleDateRange {
   font-style: italic;
   margin-right: 4px;
@@ -139,4 +122,37 @@
 }
 .iconText {
   font-size: 1.1rem;
+}
+
+/* override css for printing, esp. designed for printing to PDF */
+@media print {
+
+  /* shrinking root-level font-size trickles down via em/rem -- this value looks good when
+   * printing to pdf */
+  html {
+    font-size: 13px;
+  }
+
+  .leftBar {
+    width: 250px;
+  }
+  .mainContent {
+    margin-left: 270px;
+  }
+
+  /* when printing, add a spacer div to enforce margin after page breaks */
+  .roleContainer {
+    margin: 0px 8px 2px 12px;
+    break-inside: avoid-page;
+  }
+  .printSpacer {
+    display: block;
+    width: 0px;
+    height: 10px;
+  }
+  .roleContainer:first-of-type .printSpacer {
+    display: block;
+    width: 0px;
+    height: 0px;
+  }
 }
