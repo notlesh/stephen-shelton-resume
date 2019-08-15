@@ -1,9 +1,44 @@
+:root {
+
+  /* solarized theme colors
+   * see: https://ethanschoonover.com/solarized/
+   *
+   * inverting the colors is as simple as reversing the base colors
+   */
+  --base03:    #002b36;
+  --base02:    #073642;
+  --base01:    #586e75;
+  --base00:    #657b83;
+  --base0:     #839496;
+  --base1:     #93a1a1;
+  --base2:     #eee8d5;
+  --base3:     #fdf6e3;
+
+  /* these are static colors in the solarized theme; the don't change
+   * between light and dark */
+  --yellow:    #b58900;
+  --orange:    #cb4b16;
+  --red:       #dc322f;
+  --magenta:   #d33682;
+  --violet:    #6c71c4;
+  --blue:      #268bd2;
+  --cyan:      #2aa198;
+  --green:     #859900;
+}
+
+body {
+  color: var(--base2);
+}
+
+a {
+  color: var(--cyan);
+}
+
 .root {
   display: flex;
   align-items: stretch;
 
   width: 100%;
-  height: 100%;
   min-height: 100%;
 }
 
@@ -11,7 +46,7 @@
   height: 100%;
 }
 .leftBar {
-  background-color: #CCC;
+  background-color: var(--base02);
 
   width: 300px;
   height: 100%;
@@ -19,27 +54,35 @@
 
   position: fixed;
 
-  border-right: 1px solid black;
+  border-right: 1px solid var(--base01);
 }
 
 .mainContent {
+  background-color: var(--base03);
 
   width: 100%;
-  margin: 8px;
-  margin-left: 320px; /* nasty hack: need this so nav is position: fixed */
+  padding: 8px;
+  margin-left: 312px; /* nasty hack: need this so nav is position: fixed */
 }
 
 .sectionHeader {
+  color: var(--orange);
   font-size: 1.3rem;
   font-weight: 500;
   margin: 18px 4px 8px 4px;
 }
 
 .mainName {
+  color: var(--base3);
   font-weight: 500;
   font-size: 2.2rem;
   text-align: center;
-  margin: 12px;
+  padding: 12px;
+
+  /*
+  background-color: var(--base03);
+  border: 1px solid var(--base01);
+  */
 }
 .mainDescription {
   font-size: 1.1rem;
@@ -61,14 +104,18 @@
     height: 0px;
 }
 .roleDateRange {
+  color: var(--blue);
+  display: block;
   font-style: italic;
   margin-right: 4px;
 }
 .roleOrganization {
+  color: var(--yellow);
   font-size: 1.2rem;
   font-weight: 550;
 }
 .roleTitle {
+  color: var(--cyan);
   font-size: 1.1rem;
   font-weight: 475;
 }
@@ -86,6 +133,9 @@
   margin: 4px 0px 4px 12px;
 }
 .educationDateRange {
+  color: var(--blue);
+  display: block;
+  margin-top: 12px;
   font-size: 0.9rem;
   font-style: italic;
 }
@@ -104,10 +154,12 @@
 .tagBox {
   display: inline-block;
   font-size: 0.85rem;
-  border: 1px solid black;
-  background-color: #AAA;
+  border: 1px solid;
+  border-color: var(--base0);
+  background-color: var(--base03);
   padding: 2px 4px;
   margin: 2px;
+  color: var(--base4);
 }
 
 .iconTextContainer {
@@ -119,9 +171,16 @@
   width: 24px;
   height: auto;
   margin: 4px 6px;
+  color: blue;
 }
 .iconText {
   font-size: 1.1rem;
+}
+
+.themeToggle {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 /* override css for printing, esp. designed for printing to PDF */
@@ -131,13 +190,14 @@
    * printing to pdf */
   html {
     font-size: 13px;
+    background-color: var(--base03);
   }
 
   .leftBar {
     width: 250px;
   }
   .mainContent {
-    margin-left: 270px;
+    margin-left: 262px;
   }
 
   /* when printing, add a spacer div to enforce margin after page breaks */
@@ -155,4 +215,13 @@
     width: 0px;
     height: 0px;
   }
+  .root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .themeToggle {
+    display: none;
+  }
+
 }

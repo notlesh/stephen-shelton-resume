@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import IconTextContainer from './IconTextContainer';
-import GithubIcon from './icons/github.svg';
-import LinkedInIcon from './icons/linkedin.svg';
-import LocationIcon from './icons/location.svg';
-import MailIcon from './icons/mail.svg';
-import PhoneIcon from './icons/phone.svg';
+import ThemeToggler from './ThemeToggler';
+import GithubIcon from './icons/github';
+import LinkedInIcon from './icons/linkedin';
+import LocationIcon from './icons/location';
+import MailIcon from './icons/mail';
+import PhoneIcon from './icons/phone';
 
 function LeftBar(props) {
   return (
@@ -14,22 +15,22 @@ function LeftBar(props) {
         <div className="mainName">{props.data.name}</div>
         <div className="leftInfoBox">
           <IconTextContainer
-            icon={GithubIcon}
+            icon=<GithubIcon />
             link={props.data.github.link}
             text={props.data.github.short} />
           <IconTextContainer
-            icon={LinkedInIcon}
+            icon=<LinkedInIcon />
             link={props.data.linkedin.link}
             text={props.data.linkedin.short} />
           <IconTextContainer
-            icon={MailIcon}
+            icon=<MailIcon />
             link={"mailto:" + props.data.email}
             text={props.data.email} />
           <IconTextContainer
-            icon={PhoneIcon}
+            icon=<PhoneIcon/>
             text={props.data.phone} />
           <IconTextContainer
-            icon={LocationIcon}
+            icon=<LocationIcon />
             text={props.data.location} />
         </div>
 
@@ -53,6 +54,7 @@ function LeftBar(props) {
             <span key={item} className="tagBox">{item}</span>
           )}
         </div>
+        <ThemeToggler />
       </nav>
     </div>
   );
