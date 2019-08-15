@@ -177,6 +177,12 @@ a {
   font-size: 1.1rem;
 }
 
+.themeToggle {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
 /* override css for printing, esp. designed for printing to PDF */
 @media print {
 
@@ -214,15 +220,8 @@ a {
     min-height: 100%;
   }
 
-  /* override theme elements solarized-light */
-  :root {
-    --base3:    #002b36;
-    --base2:    #073642;
-    --base1:    #586e75;
-    --base0:    #657b83;
-    --base00:     #839496;
-    --base01:     #93a1a1;
-    --base02:     #eee8d5;
-    --base03:     #fdf6e3;
+  .themeToggle {
+    display: none;
   }
+
 }

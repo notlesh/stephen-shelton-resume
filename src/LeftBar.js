@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import IconTextContainer from './IconTextContainer';
+import ThemeToggler from './ThemeToggler';
 import GithubIcon from './icons/github';
 import LinkedInIcon from './icons/linkedin';
 import LocationIcon from './icons/location';
@@ -53,6 +54,7 @@ function LeftBar(props) {
             <span key={item} className="tagBox">{item}</span>
           )}
         </div>
+        <ThemeToggler />
       </nav>
     </div>
   );
