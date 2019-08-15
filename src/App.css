@@ -14,7 +14,7 @@
   --base2:     #eee8d5;
   --base3:     #fdf6e3;
 
-  /* these are static colors in the solaris theme; the don't change
+  /* these are static colors in the solarized theme; the don't change
    * between light and dark */
   --yellow:    #b58900;
   --orange:    #cb4b16;
@@ -214,7 +214,7 @@ a {
     min-height: 100%;
   }
 
-  /* override theme elements solaris-light */
+  /* override theme elements solarized-light */
   :root {
     --base3:    #002b36;
     --base2:    #073642;
