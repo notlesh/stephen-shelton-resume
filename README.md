@@ -6,6 +6,8 @@ My resume, written in Javascript/HTML/CSS (using ReactJS).
 
 Download the latest PDF version of my resume [here](https://github.com/notlesh/stephen-shelton-resume/releases/download/0.1/StephenSheltonResume.pdf).
 
+It is also hosted on Heroku at [resume.brewcraft.org](http://resume.brewcraft.org).
+
 ## Why HTML?
 
 Writing my resume in HTML seemed like a more structured and maintainable approach than keeping up with various documents in a traditional word processor. Initially this was just an experiment, but so far it seems effective.
