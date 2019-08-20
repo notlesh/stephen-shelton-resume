@@ -28,7 +28,7 @@ const content = {
     {name: "Git", strength: 0.9, },
     {name: "Embedded", strength: 0.8, },
     {name: "Blockchain", strength: 0.75, },
-    {name: "Cloud Computing", strength: 0.75, },
+    {name: "Cloud Compute", strength: 0.75, },
   ],
   techniques: [
     {name: "DevOps", strength: 0.8, },

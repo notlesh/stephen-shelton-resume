@@ -169,12 +169,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   font-size: 0.85rem;
   border: 1px solid;
   border-color: var(--base0);
   background-color: var(--base03);
+  white-space: nowrap;
+
   padding: 2px 4px;
   margin: 2px;
+
   color: var(--base4);
 }
 
@@ -224,10 +228,10 @@ a {
   }
 
   .leftBar {
-    width: 210px;
+    width: 220px;
   }
   .mainContent {
-    margin-left: 222px;
+    margin-left: 232px;
   }
 
   .mainName {
@@ -252,6 +256,11 @@ a {
   .root {
     width: 100%;
     min-height: 100%;
+  }
+
+  .progressBar {
+    width: 90px;
+    height: 3px;
   }
 
   .themeToggle {
