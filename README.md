@@ -2,11 +2,12 @@
 
 My resume, written in Javascript/HTML/CSS (using ReactJS).
 
-## Download
+## Viewing the Resume
 
-Download the latest PDF version of my resume [here](https://github.com/notlesh/stephen-shelton-resume/releases/download/0.1/StephenSheltonResume.pdf).
-
-It is also hosted on Heroku at [resume.brewcraft.org](http://resume.brewcraft.org).
+* [Online](http://resume.brewcraft.org)
+* [Direct Download - PDF](https://github.com/notlesh/stephen-shelton-resume/releases/download/0.3/StephenSheltonResume.pdf)
+* [Direct Download - Light-themed PDF](https://github.com/notlesh/stephen-shelton-resume/releases/download/0.3/StephenSheltonResumeLight.pdf)
+* [Direct Download - Monochrome/Print-friendly PDF](https://github.com/notlesh/stephen-shelton-resume/releases/download/0.3/StephenSheltonResumeMono.pdf)
 
 ## Why HTML?
 
