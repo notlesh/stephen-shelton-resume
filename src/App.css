@@ -49,6 +49,9 @@ a {
   height: 100%;
 }
 .leftBar {
+  display: flex;
+  flex-direction: column;
+
   background-color: var(--leftBackground);
 
   width: 260px;
@@ -56,6 +59,7 @@ a {
   padding: 6px;
 
   position: fixed;
+  overflow-y: hidden;
 
   border-right: 1px solid var(--base01);
 }
@@ -150,8 +154,15 @@ a {
   margin: 2px 8px 12px 26px;
 }
 
+.leftSectionHeader {
+  color: var(--orange);
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 8px 4px 4px 4px;
+}
+
 .leftInfoBox {
-  margin: 8px 4px 18px 10px;
+  margin: 8px 4px 10px 10px;
 }
 
 .tagBox {
@@ -195,10 +206,11 @@ a {
   font-size: 1.1rem;
 }
 
+.leftBarSpacer {
+  flex-grow: 1;
+}
 .themeToggle {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+  margin: 8px;
 }
 
 /* override css for printing, esp. designed for printing to PDF */

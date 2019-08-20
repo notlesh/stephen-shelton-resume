@@ -35,26 +35,27 @@ function LeftBar(props) {
             text={props.data.location} />
         </div>
 
-        <p className="sectionHeader">Languages</p>
+        <p className="leftSectionHeader">Languages</p>
         <div className="leftInfoBox">
           {props.data.languages.map(item =>
             <Tag key={item.name} className="tagBox" text={item.name} fill={item.strength}/>
           )}
         </div>
 
-        <p className="sectionHeader">Technologies</p>
+        <p className="leftSectionHeader">Technologies</p>
         <div className="leftInfoBox">
           {props.data.technologies.map(item =>
-            <Tag key={item} className="tagBox" text={item.name} fill={item.strength}/>
+            <Tag key={item.name} className="tagBox" text={item.name} fill={item.strength}/>
           )}
         </div>
 
-        <p className="sectionHeader">Techniques</p>
+        <p className="leftSectionHeader">Techniques</p>
         <div className="leftInfoBox">
           {props.data.techniques.map(item =>
-            <Tag key={item} className="tagBox" text={item.name} fill={item.strength}/>
+            <Tag key={item.name} className="tagBox" text={item.name} fill={item.strength}/>
           )}
         </div>
+        <div className="leftBarSpacer" />
         <ThemeToggler />
       </nav>
     </div>
