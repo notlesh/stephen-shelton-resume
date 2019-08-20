@@ -155,7 +155,9 @@ a {
 }
 
 .tagBox {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.85rem;
   border: 1px solid;
   border-color: var(--base0);
@@ -163,6 +165,19 @@ a {
   padding: 2px 4px;
   margin: 2px;
   color: var(--base4);
+}
+
+.progressBar {
+  margin: 0;
+  padding: 0;
+  background-color: var(--base01);
+
+  width: 100px;
+  height: 3px;
+}
+.progressBarFill {
+  background-color: var(--base3);
+  height: 100%;
 }
 
 .iconTextContainer {

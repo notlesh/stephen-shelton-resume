@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import IconTextContainer from './IconTextContainer';
 import ThemeToggler from './ThemeToggler';
+import Tag from './components/Tag';
 import GithubIcon from './icons/github';
 import LinkedInIcon from './icons/linkedin';
 import LocationIcon from './icons/location';
@@ -37,21 +38,21 @@ function LeftBar(props) {
         <p className="sectionHeader">Languages</p>
         <div className="leftInfoBox">
           {props.data.languages.map(item =>
-            <span key={item} className="tagBox">{item}</span>
+            <Tag key={item.name} className="tagBox" text={item.name} fill={item.strength}/>
           )}
         </div>
 
         <p className="sectionHeader">Technologies</p>
         <div className="leftInfoBox">
           {props.data.technologies.map(item =>
-            <span key={item} className="tagBox">{item}</span>
+            <Tag key={item} className="tagBox" text={item.name} fill={item.strength}/>
           )}
         </div>
 
         <p className="sectionHeader">Techniques</p>
         <div className="leftInfoBox">
           {props.data.techniques.map(item =>
-            <span key={item} className="tagBox">{item}</span>
+            <Tag key={item} className="tagBox" text={item.name} fill={item.strength}/>
           )}
         </div>
         <ThemeToggler />
