@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import IconTextContainer from './IconTextContainer';
 import ThemeToggler from './ThemeToggler';
@@ -10,9 +10,22 @@ import MailIcon from './icons/mail';
 import PhoneIcon from './icons/phone';
 
 function LeftBar(props) {
+
+  useEffect(() => {
+    const leftBar = document.getElementById("leftBar");
+    const scrollHandler = () => {
+      leftBar.scrollTop = window.pageYOffset;
+    };
+
+    window.addEventListener('scroll', scrollHandler);
+    return () => {
+       window.removeEventListener('scroll', scrollHandler);
+    }
+  }, [])
+
   return (
     <div className="leftBarWrapper">
-      <nav className="leftBar">
+      <nav id="leftBar" className="leftBar">
         <div className="mainName">{props.data.name}</div>
         <div className="leftInfoBox">
           <IconTextContainer
