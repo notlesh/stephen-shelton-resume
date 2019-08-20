@@ -4,7 +4,7 @@
 const content = {
   name: "Stephen Shelton",
   phone: "214.535.5783",
-  email: "stephen@stephenashelton.com",
+  email: "steve@brewcraft.org",
   location: "Colorado Springs / Denver",
   linkedin: {
     link: "https://www.linkedin.com/in/notlesh/",
