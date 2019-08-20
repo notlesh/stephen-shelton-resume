@@ -24,6 +24,9 @@
   --blue:      #268bd2;
   --cyan:      #2aa198;
   --green:     #859900;
+
+  --mainBackground: var(--base03);
+  --leftBackground: var(--base02);
 }
 
 body {
@@ -46,7 +49,7 @@ a {
   height: 100%;
 }
 .leftBar {
-  background-color: var(--base02);
+  background-color: var(--leftBackground);
 
   width: 260px;
   height: 100%;
@@ -58,7 +61,7 @@ a {
 }
 
 .mainContent {
-  background-color: var(--base03);
+  background-color: var(--mainBackground);
 
   width: 100%;
   padding: 8px;

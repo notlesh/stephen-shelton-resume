@@ -19,6 +19,9 @@ const themes = {
     blue:      "#268bd2",
     cyan:      "#2aa198",
     green:     "#859900",
+
+    mainBackground: "var(--base03)",
+    leftBackground: "var(--base02)",
   },
 
   light: {
@@ -39,16 +42,19 @@ const themes = {
     blue:      "#268bd2",
     cyan:      "#2aa198",
     green:     "#859900",
+
+    mainBackground: "var(--base03)",
+    leftBackground: "var(--base02)",
   },
 
   monochrome: {
     base3:    "#000000",
-    base2:    "#000000",
-    base1:    "#000000",
-    base0:    "#000000",
-    base00:   "#000000",
-    base01:   "#000000",
-    base02:   "#ffffff",
+    base2:    "#222222",
+    base1:    "#444444",
+    base0:    "#666666",
+    base00:   "#888888",
+    base01:   "#bbbbbb",
+    base02:   "#dddddd",
     base03:   "#ffffff",
 
     yellow:    "#000000",
@@ -59,6 +65,9 @@ const themes = {
     blue:      "#000000",
     cyan:      "#000000",
     green:     "#000000",
+
+    mainBackground: "white",
+    leftBackground: "white",
   },
 };
 
