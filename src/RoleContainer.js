@@ -11,7 +11,7 @@ function RoleContainer(props) {
         <span className="roleTitle">{props.role.title}</span>
         <ul className="roleList">
           {props.role.points.map(point =>
-            <li key={point} className="roleListItem">{point}</li>
+            <li key={point} className="roleListItem" dangerouslySetInnerHTML={{__html: point}}></li>
           )}
         </ul>
       </div>
