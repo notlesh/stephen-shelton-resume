@@ -45,6 +45,9 @@ npm start
 
 As noted above, resume content is driven entirely by JSON data found in [data.js](https://github.com/notlesh/stephen-shelton-resume/blob/master/src/data.js), so start by modifying this file to represent your own experience.
 
-## Producing a PDF version
+## Printing / Producing a PDF version
 
-I expect that most web browsers that provide a print-to-PDF feature will do an acceptable job. I've tested using the Brave browser `Version 0.62.51 Chromium: 73.0.3683.103 (Official Build) (64-bit)` and am happy with the results.
+Your browser's print functionality should work, whether printing to file or PDF or other document format. I've tested using using various versions of the Brave browser and am happy with the results.
+
+Note that there is a blank page at the end of the document when printing. I suggest omitting it in the print dialog. This is a workaround for an issue with page breaking CSS rules which results in background color reverting to white in print in some cases.
+
