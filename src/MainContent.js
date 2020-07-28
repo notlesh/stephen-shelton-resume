@@ -29,6 +29,8 @@ function MainContent(props) {
       { props.data.extraEnd.map(extra =>
         <ExtraEndContainer key={extra.headline} extra={extra} />
       )}
+
+      <div className="printDummyPageEnd" />
     </div>
   );
 }

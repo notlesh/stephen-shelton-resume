@@ -217,6 +217,13 @@ a {
   margin: 8px;
 }
 
+/* used by @media print to force an empty page at the end.
+ * this fixes issues with background-color being dropped
+ */
+.printDummyPageEnd {
+  display: none;
+}
+
 /* override css for printing, esp. designed for printing to PDF */
 @media print {
 
@@ -265,6 +272,13 @@ a {
 
   .themeToggle {
     display: none;
+  }
+
+  .printDummyPageEnd {
+    display: block;
+    width: 0px;
+    height: 0px;
+    page-break-before: always; /* forces page break before element */
   }
 
 }
