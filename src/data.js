@@ -17,11 +17,12 @@ const content = {
   description: "Diverse engineer with 15 years of professional experience across many industries and programming environments. Thorough and dependable with a preference for thoughtful and maintainable code.",
   languages: [
     {name: "C++", strength: 0.9, },
+    {name: "Rust", strength: 0.7, },
     {name: "Java", strength: 0.85, },
     {name: "JavaScript", strength: 0.85, },
     {name: "Python", strength: 0.75, },
     {name: "SQL", strength: 0.7, },
-    {name: "Solidity", strength: 0.65, },
+    {name: "Solidity", strength: 0.75, },
   ],
   technologies: [
     {name: "Linux", strength: 0.9, },
@@ -42,8 +43,16 @@ const content = {
     {name: "APIs/REST", strength: 0.75, },
   ],
   roles: [
-    { start: "September 2019",
+    { start: "December 2020",
       end: "Present",
+      org: "PureStake",
+      title: "Sr. Blockchain Engineer",
+      points: [
+        "I currently work on <a href='https://moonbeam.network/'>Moonbeam</a>, an Ethereum-compatible parachain on the Polkadot network",
+      ]
+    },
+    { start: "September 2019",
+      end: "August 2020",
       org: "Loki Network",
       title: "Software Engineer",
       points: [
